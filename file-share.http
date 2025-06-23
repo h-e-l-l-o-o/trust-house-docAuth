@@ -1,0 +1,6 @@
+@file_share_HostAddress = http://localhost:5082
+
+GET {{file_share_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

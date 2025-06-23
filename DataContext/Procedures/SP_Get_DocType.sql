@@ -1,0 +1,9 @@
+CREATE OR ALTER PROCEDURE SP_Get_DocTypes
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT DocTypeID, DocTypeDesc
+    FROM TBL_LK_DocType
+    WHERE IsActive = 1;
+END;
