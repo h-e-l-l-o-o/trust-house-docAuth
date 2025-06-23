@@ -219,7 +219,7 @@ public class AuthService(IDapperContext Data, IHttpContextAccessor Context, ICon
             Expires = refresh.ExpiresAt,
             SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None,
             IsEssential = true,
-            Secure = true,
+            Secure = false,
             MaxAge = TimeSpan.FromDays(30),
         };
 
